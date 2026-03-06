@@ -1,0 +1,37 @@
+# Node
+node_modules/
+dist/
+build/
+.env
+.env.*
+package-lock.json
+# Vite / Node cache
+.vite/
+coverage/
+# Go
+/bin/
+/obj/
+*.exe
+*.exe~
+*.test
+*.out
+# Go modules cache
+vendor/
+# Editor/IDE
+.vscode/
+.idea/
+*.swp
+.DS_Store
+# Docker
+*.log
+docker-compose.override.yml
+# Other
+*.lock
+*.log
+logs/
+# Local env
+local.env
+
+# Ignore the frontend build artifacts if any
+ugss-command-center-main/dist/
+ugss-command-center-main/build/
