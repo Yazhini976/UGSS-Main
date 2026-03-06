@@ -86,8 +86,19 @@ export function Sidebar() {
         </ul>
       </nav>
 
-      {/* Footer with collapse toggle */}
-      <div className="border-t border-sidebar-border p-2">
+      {/* Footer with GitHub and collapse toggle */}
+      <div className="border-t border-sidebar-border p-2 space-y-1">
+        {!collapsed && (
+          <a
+            href="https://github.com/Yazhini976/UGSSMAIN"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 rounded-lg px-3 py-2 text-xs text-sidebar-muted transition-colors hover:bg-sidebar-accent hover:text-sidebar-foreground"
+          >
+            <ShieldCheck className="h-4 w-4" />
+            <span className="truncate">View on GitHub</span>
+          </a>
+        )}
         <button
           onClick={() => setCollapsed(!collapsed)}
           className="flex w-full items-center justify-center gap-2 rounded-lg px-3 py-2 text-sm text-sidebar-muted transition-colors hover:bg-sidebar-accent hover:text-sidebar-foreground"
